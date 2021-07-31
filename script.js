@@ -432,7 +432,6 @@ resultatFinal.addEventListener('click', () => {
    }
 });
 del.addEventListener('click', () => {
-    numberClass.style.display = 'none';
     numberClass.innerHTML = '0';
     resultat1 = 0;
     resultat2 = 0;
@@ -445,7 +444,6 @@ del.addEventListener('click', () => {
     division1 = false;
 });
 reset.addEventListener('click', () => {
-    numberClass.style.display = 'none';
     numberClass.innerHTML = '0';
     resultat1 = 0;
     resultat2 = 0;
