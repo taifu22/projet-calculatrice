@@ -1,0 +1,108 @@
+.numuguale, .numreset, .point, .addition, .soustraction, .multiplication, .division, .num0, .num-, .num3, .num2, .num1, .num6, .num5, .num4, .numDel, .num9, .num8, .num7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 40px;
+  width: 60px;
+  margin: 10px;
+  box-shadow: 2px 4px 10px black;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.point:hover, .addition:hover, .soustraction:hover, .multiplication:hover, .division:hover, .num0:hover, .num-:hover, .num3:hover, .num2:hover, .num1:hover, .num6:hover, .num5:hover, .num4:hover, .numDel:hover, .num9:hover, .num8:hover, .num7:hover {
+  background-color: #5e719c;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 740px;
+  align-items: center;
+  background: linear-gradient(#3a4764, #669999);
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  background-color: #3a4764;
+  height: 500px;
+  width: 360px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 4px 10px black;
+}
+
+.resultat {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 100px;
+  background-color: #182034;
+  margin: 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.numero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 320px;
+  margin: 20px;
+  background-color: #232c43;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.numberclass {
+  color: white;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.numreset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #637097;
+  color: white;
+  height: 50px;
+  width: 140px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.numreset:hover {
+  background-color: #3c4767;
+}
+
+.numuguale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d03f2f;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  width: 140px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.numuguale:hover {
+  background-color: #93261a;
+}/*# sourceMappingURL=style.css.map */
