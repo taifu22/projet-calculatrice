@@ -31,287 +31,46 @@ let zero = true
 
 numberClass.textContent = '0';
 
-num7.addEventListener('click', () => {
+function number(premierNombre, deuxiemeNombre) {
 
     if (addition1 || soustraction1 || division1 || multiplication1) {
         numberClass.style.display = 'block';
-        numberClass.innerHTML += 7
-        resultat1 = parseInt(resultat1 + "7");
+        numberClass.innerHTML += premierNombre
+        resultat1 = parseInt(resultat1 + deuxiemeNombre);
         console.log(resultat1);    
     } else if (addition2) {
         numberClass.style.display = 'block';
-        numberClass.innerHTML += 7
-        resultat4 = parseInt(resultat4 + "7");
+        numberClass.innerHTML += premierNombre
+        resultat4 = parseInt(resultat4 + deuxiemeNombre);
         console.log(resultat4);
     }
      else {
       if (zero) {
         numberClass.textContent = "";
         numberClass.style.display = 'block';
-        numberClass.innerHTML += 7
-        resultat2 = parseInt(resultat2 +  "7");
+        numberClass.innerHTML += premierNombre
+        resultat2 = parseInt(resultat2 +  deuxiemeNombre);
         console.log(resultat2); 
         zero = false;  
       } else {
         numberClass.style.display = 'block';
-        numberClass.innerHTML += 7
-        resultat2 = parseInt(resultat2 +  "7");
+        numberClass.innerHTML += premierNombre
+        resultat2 = parseInt(resultat2 +  deuxiemeNombre);
         console.log(resultat2); 
       }
     }
-});
-num8.addEventListener('click', () => {
+}
 
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 8
-        resultat1 = parseInt(resultat1 + "8");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 8
-        resultat4 = parseInt(resultat4 + "8");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 8
-            resultat2 = parseInt(resultat2 +  "8");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 8
-            resultat2 = parseInt(resultat2 +  "8");
-            console.log(resultat2); 
-          }
-    }
-});
-num9.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 9
-        resultat1 = parseInt(resultat1 + "9");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 9
-        resultat4 = parseInt(resultat4 + "9");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 9
-            resultat2 = parseInt(resultat2 +  "9");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 9
-            resultat2 = parseInt(resultat2 +  "9");
-            console.log(resultat2); 
-          }
-    }
-});
-num1.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 1
-        resultat1 = parseInt(resultat1 + "1");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 1
-        resultat4 = parseInt(resultat4 + "1");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 1
-            resultat2 = parseInt(resultat2 +  "1");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 1
-            resultat2 = parseInt(resultat2 +  "1");
-            console.log(resultat2); 
-          }
-    }
-});
-num4.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 4
-        resultat1 = parseInt(resultat1 + "4");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 4
-        resultat4 = parseInt(resultat4 + "4");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 4
-            resultat2 = parseInt(resultat2 +  "4");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 4
-            resultat2 = parseInt(resultat2 +  "4");
-            console.log(resultat2); 
-          }
-    }
-});
-num5.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 5
-        resultat1 = parseInt(resultat1 + "5");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 5
-        resultat4 = parseInt(resultat4 + "5");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 5
-            resultat2 = parseInt(resultat2 +  "5");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 5
-            resultat2 = parseInt(resultat2 +  "5");
-            console.log(resultat2); 
-          }
-    }
-});
-num6.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 6
-        resultat1 = parseInt(resultat1 + "6");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 6
-        resultat4 = parseInt(resultat4 + "6");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 6
-            resultat2 = parseInt(resultat2 +  "6");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 6
-            resultat2 = parseInt(resultat2 +  "6");
-            console.log(resultat2); 
-          }
-    }
-});
-num2.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 2
-        resultat1 = parseInt(resultat1 + "2");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 2
-        resultat4 = parseInt(resultat4 + "2");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 2
-            resultat2 = parseInt(resultat2 +  "2");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 2
-            resultat2 = parseInt(resultat2 +  "2");
-            console.log(resultat2); 
-          }
-    }
-});
-num3.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 3
-        resultat1 = parseInt(resultat1 + "3");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 3
-        resultat4 = parseInt(resultat4 + "3");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 3
-            resultat2 = parseInt(resultat2 +  "3");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 3
-            resultat2 = parseInt(resultat2 +  "3");
-            console.log(resultat2); 
-          }
-    }
-});
-num0.addEventListener('click', () => {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 0
-        resultat1 = parseInt(resultat1 + "0");
-        console.log(resultat1);
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += 0
-        resultat4 = parseInt(resultat4 + "0");
-        console.log(resultat4);
-    } else {
-        if (zero) {
-            numberClass.textContent = "";
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 0
-            resultat2 = parseInt(resultat2 +  "0");
-            console.log(resultat2); 
-            zero = false;  
-          } else {
-            numberClass.style.display = 'block';
-            numberClass.innerHTML += 0
-            resultat2 = parseInt(resultat2 +  "0");
-            console.log(resultat2); 
-          }
-    }
-});
+num7.addEventListener('click', () => { number(7, "7")});
+num8.addEventListener('click', () => { number(8, "8")});
+num9.addEventListener('click', () => { number(9, "9")});
+num1.addEventListener('click', () => { number(1, "1")});
+num4.addEventListener('click', () => { number(4, "4")});
+num5.addEventListener('click', () => { number(5, "5")});
+num6.addEventListener('click', () => { number(6, "6")});
+num2.addEventListener('click', () => { number(2, "2")});
+num3.addEventListener('click', () => { number(3, "3")});
+num0.addEventListener('click', () => { number(0, "0")});
 
 addition.addEventListener('click', () => {
 
