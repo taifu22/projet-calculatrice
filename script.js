@@ -28,38 +28,36 @@ let division1 = false;
 let resultatFinal = document.querySelector('.numuguale');
 let point = document.querySelector('.point');
 let zero = true
-
 numberClass.textContent = '0';
 
 function number(premierNombre, deuxiemeNombre) {
-
-    if (addition1 || soustraction1 || division1 || multiplication1) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += premierNombre
-        resultat1 = parseInt(resultat1 + deuxiemeNombre);
-        console.log(resultat1);    
-    } else if (addition2) {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += premierNombre
-        resultat4 = parseInt(resultat4 + deuxiemeNombre);
-        console.log(resultat4);
+        if (addition1 || soustraction1 || division1 || multiplication1) {
+            numberClass.style.display = 'block';
+            numberClass.innerHTML += premierNombre
+            resultat1 = parseInt(resultat1 + deuxiemeNombre);
+            console.log(resultat1);    
+        } else if (addition2) {
+            numberClass.style.display = 'block';
+            numberClass.innerHTML += premierNombre
+            resultat4 = parseInt(resultat4 + deuxiemeNombre);
+            console.log(resultat4);
+        }
+         else {
+          if (zero) {
+            numberClass.textContent = "";
+            numberClass.style.display = 'block';
+            numberClass.innerHTML += premierNombre
+            resultat2 = parseInt(resultat2 +  deuxiemeNombre);
+            console.log(resultat2); 
+            zero = false;  
+          } else {
+            numberClass.style.display = 'block';
+            numberClass.innerHTML += premierNombre
+            resultat2 = parseInt(resultat2 +  deuxiemeNombre);
+            console.log(resultat2); 
+          }
+        }
     }
-     else {
-      if (zero) {
-        numberClass.textContent = "";
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += premierNombre
-        resultat2 = parseInt(resultat2 +  deuxiemeNombre);
-        console.log(resultat2); 
-        zero = false;  
-      } else {
-        numberClass.style.display = 'block';
-        numberClass.innerHTML += premierNombre
-        resultat2 = parseInt(resultat2 +  deuxiemeNombre);
-        console.log(resultat2); 
-      }
-    }
-}
 
 num7.addEventListener('click', () => { number(7, "7")});
 num8.addEventListener('click', () => { number(8, "8")});
@@ -181,6 +179,7 @@ resultatFinal.addEventListener('click', () => {
         resultat2 = parseInt(resultat3);
    } else if (division1) {
         resultat3 = parseFloat(resultat2 / resultat1).toFixed(2);
+        resultat3 = parseFloat(resultat3);
         numberClass.innerHTML = resultat3;
         console.log(resultat3);
         division1 = false;
@@ -191,16 +190,19 @@ resultatFinal.addEventListener('click', () => {
    }
 });
 del.addEventListener('click', () => {
-    numberClass.innerHTML = '0';
-    resultat1 = 0;
-    resultat2 = 0;
-    resultat3 = 0;
-    resultat4 = 0;
-    zero = true;
-    addition1 = false;
-    soustraction1 = false;
-    multiplication1 = false;
-    division1 = false;
+    if (addition1) {
+        resultat1 =parseInt(resultat1.toString().substr(0, resultat1.toString().length - 1));
+        numberClass.innerHTML = resultat1 - (resultat1 - Nombre)
+        console.log(resultat1);
+    } else if (addition2) {
+        resultat4 =parseInt(resultat4.toString().substr(0, resultat4.toString().length - 1));
+        numberClass.innerHTML += resultat4 - (resultat4 - Nombre)
+        console.log(resultat4);
+    } else {
+        resultat2 =parseInt(resultat2.toString().substr(0, resultat2.toString().length - 1));
+        numberClass.innerHTML = resultat2
+        console.log(resultat2);
+    }
 });
 reset.addEventListener('click', () => {
     numberClass.innerHTML = '0';
