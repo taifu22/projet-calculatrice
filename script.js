@@ -192,11 +192,23 @@ resultatFinal.addEventListener('click', () => {
 del.addEventListener('click', () => {
     if (addition1) {
         resultat1 =parseInt(resultat1.toString().substr(0, resultat1.toString().length - 1));
-        numberClass.innerHTML = resultat1 - (resultat1 - Nombre)
+        numberClass.innerHTML = resultat2  + '+' + resultat1;
+        console.log(resultat1);
+    } else if (soustraction1) {
+        resultat1 =parseInt(resultat1.toString().substr(0, resultat1.toString().length - 1));
+        numberClass.innerHTML = resultat2  + '+' + resultat1;
+        console.log(resultat1);
+    } else if (multiplication1) {
+        resultat1 =parseInt(resultat1.toString().substr(0, resultat1.toString().length - 1));
+        numberClass.innerHTML = resultat2  + '+' + resultat1;
+        console.log(resultat1);
+    } else if (division1) {
+        resultat1 =parseInt(resultat1.toString().substr(0, resultat1.toString().length - 1));
+        numberClass.innerHTML = resultat2  + '+' + resultat1;
         console.log(resultat1);
     } else if (addition2) {
         resultat4 =parseInt(resultat4.toString().substr(0, resultat4.toString().length - 1));
-        numberClass.innerHTML += resultat4 - (resultat4 - Nombre)
+        numberClass.innerHTML = resultat2 + '+' + resultat1 + '+' + resultat4
         console.log(resultat4);
     } else {
         resultat2 =parseInt(resultat2.toString().substr(0, resultat2.toString().length - 1));
